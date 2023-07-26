@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Lightgray: hsl(212, 45%, 89%);
+  --Grayishblue: hsl(220, 15%, 55%);
+  --Darkblue: hsl(218, 44%, 22%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Lightgray);
+  font-size: 1.5rem;
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+}
+
+.card {
+  padding: 1.6rem 1.6rem 4rem 1.6rem;
+  width: 32rem;
+
+  background-color: var(--white);
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.card > img {
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+
+.card > h1 {
+  margin-bottom: 1.6rem;
+
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.card > p {
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  color: var(--Grayishblue);
 }
